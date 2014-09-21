@@ -44,7 +44,7 @@ private:
 		for (int i = s.length() - 1; i >= pos; i -= BASEDIGITS) {
 			int x = 0;
 			for (int j = max(pos, i - BASEDIGITS + 1); j <= i; j++) {
-				if (s[j] < '0' || s[0] > '9') {
+				if (s[j] < '0' || s[j] > '9') {
 					throw "Err: input contains invaild character";
 				}
 				x = x * 10 + s[j] - '0';
