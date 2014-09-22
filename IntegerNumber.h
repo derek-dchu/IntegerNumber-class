@@ -97,7 +97,7 @@ public:
 		return res;
 	}
 
-// eliminate empty digits
+	// eliminate empty digits
 	void trim() {
 		while (!digits.empty() && !digits.back())
 			digits.pop_back();
