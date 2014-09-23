@@ -29,7 +29,7 @@ private:
 
 	void parseString(string s) {
 		if (s.length() == 0) {
-			throw "Err: empty string";
+			throw runtime_error("Err: empty input string");
 		}
 		sign = 1;
 		int pos = 0;
@@ -45,7 +45,7 @@ private:
 			int x = 0;
 			for (int j = max(pos, i - BASEDIGITS + 1); j <= i; j++) {
 				if (s[j] < '0' || s[j] > '9') {
-					throw "Err: input contains invaild character";
+					throw runtime_error("Err: input contains invaild character");
 				}
 				x = x * 10 + s[j] - '0';
 			}
