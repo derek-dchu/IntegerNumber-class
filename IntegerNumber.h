@@ -5,7 +5,7 @@
 *	
 *	Version: 1.0
 *	Supported Operation:
-*		+, -, +=, -=, 
+*		+, -, +=, -=, -()
 *		<, >, <=, >=, == ,!=
 *		abs()
 *		<< (ostream)
