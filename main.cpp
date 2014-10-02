@@ -12,6 +12,8 @@ int main(int argc, char * argv[]) {
 
     try {
         IntegerNumber A; // IntegerNumber object A is created and A contains the integer 0
+        cin >> A;
+        cout << A << endl;
         IntegerNumber B("-12345678954688709764347890"); // IntegerNumber object B is created and B contains the negative number shown within the quotes " "
         IntegerNumber C;
         C = "5678954688709764347890"; // IntegerNumber object C is created and C contains the positive number shown within the quotes " "

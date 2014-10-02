@@ -180,6 +180,13 @@ public:
 	    	os << setw(BASEDIGITS) << setfill('0') << val.digits[i];
 	    return os;
 	}
+
+	friend istream& operator>>(istream& is, IntegerNumber &val) {
+		string s;
+		is >> s;
+		val.parseString(s);
+		return is;
+	}
 };
 
 
